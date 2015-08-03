@@ -29,7 +29,7 @@ class LicensingItemCell: UITableViewCell {
         setupSubviews()
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupSubviews()
     }
@@ -46,11 +46,11 @@ class LicensingItemCell: UITableViewCell {
 
     func setupSubviews() {
         titleLabel.numberOfLines = 0
-        titleLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(titleLabel)
 
         noticeLabel.numberOfLines = 0
-        noticeLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+        noticeLabel.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(noticeLabel)
         
         self.setNeedsUpdateConstraints()
@@ -69,19 +69,19 @@ class LicensingItemCell: UITableViewCell {
         ]
 
         contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("|-spacing-[titleLabel]-spacing-|",
-            options: nil,
+            options: [],
             metrics: metrics,
             views: views
         ))
 
         contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-spacing-[titleLabel]-[noticeLabel]-spacing-|",
-            options: nil,
+            options: [],
             metrics: metrics,
             views: views
             ))
 
         contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("|-spacing-[noticeLabel]-spacing-|",
-            options: nil,
+            options: [],
             metrics: metrics,
             views: views
             ))

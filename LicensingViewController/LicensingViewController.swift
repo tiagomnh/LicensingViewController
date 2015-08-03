@@ -20,8 +20,8 @@ public class LicensingViewController: UITableViewController {
     public var items: [LicensingItem] = [] {
         didSet { tableView.reloadData() }
     }
-
-    public var titleFont = UIFont.systemFontOfSize(18, weight: UIFontWeightBold) {
+    
+    public var titleFont = UIFont.boldSystemFontOfSize(18) {
         didSet { tableView.reloadData() }
     }
 
@@ -52,7 +52,7 @@ public class LicensingViewController: UITableViewController {
 
 // MARK: UITableViewDataSource
 
-extension LicensingViewController: UITableViewDataSource {
+extension LicensingViewController {
 
     override public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
