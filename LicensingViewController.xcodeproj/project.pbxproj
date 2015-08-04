@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		860B52331B71480900155379 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860B52321B71480900155379 /* AppDelegate.swift */; };
 		862F24911B568DB90035ED24 /* LicensingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 862F24901B568DB90035ED24 /* LicensingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		862F24971B568DB90035ED24 /* LicensingViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862F248B1B568DB90035ED24 /* LicensingViewController.framework */; };
 		862F249E1B568DB90035ED24 /* LicensingViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862F249D1B568DB90035ED24 /* LicensingViewControllerTests.swift */; };
 		862F24D81B568E490035ED24 /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862F24D51B568E490035ED24 /* License.swift */; };
 		862F24D91B568E490035ED24 /* LicensingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862F24D61B568E490035ED24 /* LicensingItem.swift */; };
 		862F24DA1B568E490035ED24 /* LicensingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862F24D71B568E490035ED24 /* LicensingViewController.swift */; };
+		86A545E31B7151A7002F5101 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A545E21B7151A7002F5101 /* Launch Screen.storyboard */; };
 		86DD5C721B56F969005A4667 /* LicensingItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DD5C711B56F969005A4667 /* LicensingItemCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		860B52301B71480900155379 /* LicensingViewControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LicensingViewControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		860B52321B71480900155379 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		860B523E1B71480900155379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		862F248B1B568DB90035ED24 /* LicensingViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LicensingViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		862F248F1B568DB90035ED24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		862F24901B568DB90035ED24 /* LicensingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LicensingViewController.h; sourceTree = "<group>"; };
@@ -38,10 +43,18 @@
 		862F24D71B568E490035ED24 /* LicensingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicensingViewController.swift; sourceTree = "<group>"; };
 		862F24E91B5690710035ED24 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		862F24EA1B5690790035ED24 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		86A545E21B7151A7002F5101 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		86DD5C711B56F969005A4667 /* LicensingItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicensingItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		860B522D1B71480900155379 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		862F24871B568DB90035ED24 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,6 +73,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		860B52311B71480900155379 /* LicensingViewControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				860B52321B71480900155379 /* AppDelegate.swift */,
+				86A545E21B7151A7002F5101 /* Launch Screen.storyboard */,
+				860B523E1B71480900155379 /* Info.plist */,
+			);
+			path = LicensingViewControllerDemo;
+			sourceTree = "<group>";
+		};
 		862F24811B568DB90035ED24 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +90,7 @@
 				862F24EA1B5690790035ED24 /* README.md */,
 				862F248D1B568DB90035ED24 /* LicensingViewController */,
 				862F249A1B568DB90035ED24 /* LicensingViewControllerTests */,
+				860B52311B71480900155379 /* LicensingViewControllerDemo */,
 				862F248C1B568DB90035ED24 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +100,7 @@
 			children = (
 				862F248B1B568DB90035ED24 /* LicensingViewController.framework */,
 				862F24961B568DB90035ED24 /* LicensingViewControllerTests.xctest */,
+				860B52301B71480900155379 /* LicensingViewControllerDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +157,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		860B522F1B71480900155379 /* LicensingViewControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 860B52411B71480900155379 /* Build configuration list for PBXNativeTarget "LicensingViewControllerDemo" */;
+			buildPhases = (
+				860B522C1B71480900155379 /* Sources */,
+				860B522D1B71480900155379 /* Frameworks */,
+				860B522E1B71480900155379 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LicensingViewControllerDemo;
+			productName = LicensingViewControllerDemo;
+			productReference = 860B52301B71480900155379 /* LicensingViewControllerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		862F248A1B568DB90035ED24 /* LicensingViewController */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 862F24A11B568DB90035ED24 /* Build configuration list for PBXNativeTarget "LicensingViewController" */;
@@ -179,6 +221,9 @@
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Tiago Henriques";
 				TargetAttributes = {
+					860B522F1B71480900155379 = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					862F248A1B568DB90035ED24 = {
 						CreatedOnToolsVersion = 6.4;
 					};
@@ -193,6 +238,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 862F24811B568DB90035ED24;
 			productRefGroup = 862F248C1B568DB90035ED24 /* Products */;
@@ -201,11 +247,20 @@
 			targets = (
 				862F248A1B568DB90035ED24 /* LicensingViewController */,
 				862F24951B568DB90035ED24 /* LicensingViewControllerTests */,
+				860B522F1B71480900155379 /* LicensingViewControllerDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		860B522E1B71480900155379 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86A545E31B7151A7002F5101 /* Launch Screen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		862F24891B568DB90035ED24 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -223,6 +278,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		860B522C1B71480900155379 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				860B52331B71480900155379 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		862F24861B568DB90035ED24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,6 +316,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		860B523F1B71480900155379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = LicensingViewControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiagomnh.LicensingViewControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		860B52401B71480900155379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LicensingViewControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiagomnh.LicensingViewControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		862F249F1B568DB90035ED24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -410,6 +497,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		860B52411B71480900155379 /* Build configuration list for PBXNativeTarget "LicensingViewControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				860B523F1B71480900155379 /* Debug */,
+				860B52401B71480900155379 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		862F24851B568DB90035ED24 /* Build configuration list for PBXProject "LicensingViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

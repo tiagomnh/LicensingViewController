@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  LicensingViewControllerDemo
 //
-//  Created by Tiago Henriques on 15/07/15.
-//  Copyright (c) 2015 Tiago Henriques. All rights reserved.
+//  Created by Tiago Henriques on 04/08/15.
+//  Copyright © 2015 Tiago Henriques. All rights reserved.
 //
 
 import LicensingViewController
@@ -40,9 +40,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window?.makeKeyAndVisible()
         self.window?.rootViewController = UINavigationController(rootViewController: licensingViewController)
-
+        
         return true
     }
-
+    
 }
 
