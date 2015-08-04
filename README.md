@@ -4,9 +4,9 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/tiagomnh/LicensingViewController)
 ![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)
 
-LicensingViewController is a `UIViewController` subclass with a simple API for displaying licensing information. 
+LicensingViewController is a `UIViewController` subclass with a simple API for displaying licensing information.
 
-Written in Swift 1.2.
+Written in Swift 2.0. Check tag `0.1.0` for a Swift 1.2 compatible version.
 
 ## Usage
 
