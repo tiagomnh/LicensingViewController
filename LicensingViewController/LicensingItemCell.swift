@@ -52,13 +52,11 @@ class LicensingItemCell: UITableViewCell {
         noticeLabel.numberOfLines = 0
         noticeLabel.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(noticeLabel)
-        
-        self.setNeedsUpdateConstraints()
+
+        setupConstraints()
     }
 
-    override func updateConstraints() {
-        super.updateConstraints()
-
+    func setupConstraints() {
         let views = [
             "titleLabel": titleLabel,
             "noticeLabel": noticeLabel
@@ -72,7 +70,7 @@ class LicensingItemCell: UITableViewCell {
             options: [],
             metrics: metrics,
             views: views
-        ))
+            ))
 
         contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-spacing-[titleLabel]-[noticeLabel]-spacing-|",
             options: [],
@@ -86,5 +84,5 @@ class LicensingItemCell: UITableViewCell {
             views: views
             ))
     }
-    
+
 }
