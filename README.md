@@ -1,7 +1,7 @@
 # LicensingViewController
 
 ![Version](https://img.shields.io/github/tag/tiagomnh/LicensingViewController.svg)
-![Swift](https://img.shields.io/badge/Swift-1.2-orange.svg)
+![Swift](https://img.shields.io/badge/Swift-2.0-orange.svg)
 ![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)
 ![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)
 
