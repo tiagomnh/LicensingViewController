@@ -37,6 +37,9 @@ public class LicensingViewController: UITableViewController {
         didSet { tableView.reloadData() }
     }
 
+    public var cellBackroundColor = UIColor.whiteColor() {
+        didSet { tableView.reloadData() }
+    }
 
     // MARK: Lifecycle
 
@@ -70,7 +73,9 @@ extension LicensingViewController {
         cell?.noticeLabel.text = item.notice()
         cell?.noticeLabel.font = noticeFont
         cell?.noticeLabel.textColor = noticeColor
-
+        
+        cell?.backgroundColor = cellBackroundColor
+        
         cell?.userInteractionEnabled = false
         
         cell?.layoutIfNeeded()
