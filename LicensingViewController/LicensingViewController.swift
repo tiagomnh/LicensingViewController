@@ -37,7 +37,7 @@ public class LicensingViewController: UITableViewController {
         didSet { tableView.reloadData() }
     }
 
-    public var cellBackroundColor = UIColor.whiteColor() {
+    public var cellBackgroundColor = UIColor.whiteColor() {
         didSet { tableView.reloadData() }
     }
 
@@ -74,7 +74,7 @@ extension LicensingViewController {
         cell?.noticeLabel.font = noticeFont
         cell?.noticeLabel.textColor = noticeColor
         
-        cell?.backgroundColor = cellBackroundColor
+        cell?.backgroundColor = cellBackgroundColor
         
         cell?.userInteractionEnabled = false
         
