@@ -20,17 +20,17 @@ licensingViewController.title = "Acknowledgments"
 
 let alamofireItem = LicensingItem(
     title: "Alamofire",
-    license: License.MIT(owner: "Alamofire Software Foundation (http://alamofire.org/)", years: "2014")
+    license: License.mit(owner: "Alamofire Software Foundation (http://alamofire.org/)", years: "2014")
 )
 
 let caniveteItem = LicensingItem(
     title: "Canivete",
-    license: License.MIT(owner: "Tiago Henriques (http://tiagomnh.com)", years: "2015")
+    license: License.mit(owner: "Tiago Henriques (http://tiagomnh.com)", years: "2015")
 )
 
 let kingfisherItem = LicensingItem(
     title: "Kingfisher",
-    license: License.MIT(owner: "Wei Wang", years: "2015")
+    license: License.mit(owner: "Wei Wang", years: "2015")
 )
 
 licensingViewController.items = [alamofireItem, caniveteItem, kingfisherItem]
