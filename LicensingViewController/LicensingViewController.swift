@@ -12,39 +12,39 @@ public class LicensingViewController: UITableViewController {
 
     // MARK: Constants
 
-    private let reuseIdentifier = "LicensingItemCell"
+    fileprivate let reuseIdentifier = "LicensingItemCell"
     
 
     // MARK: Properties
 
-    public var items: [LicensingItem] = [] {
+    open var items: [LicensingItem] = [] {
         didSet { tableView.reloadData() }
     }
     
-    public var titleFont = UIFont.boldSystemFontOfSize(18) {
+    open var titleFont = UIFont.boldSystemFont(ofSize: 18) {
         didSet { tableView.reloadData() }
     }
 
-    public var titleColor = UIColor.blackColor() {
+    open var titleColor = UIColor.black {
         didSet { tableView.reloadData() }
     }
 
-    public var noticeFont = UIFont.systemFontOfSize(13) {
+    open var noticeFont = UIFont.systemFont(ofSize: 13) {
         didSet { tableView.reloadData() }
     }
 
-    public var noticeColor = UIColor.darkGrayColor() {
+    open var noticeColor = UIColor.darkGray {
         didSet { tableView.reloadData() }
     }
 
-    public var cellBackgroundColor = UIColor.whiteColor() {
+    open var cellBackgroundColor = UIColor.white {
         didSet { tableView.reloadData() }
     }
 
     // MARK: Lifecycle
 
-    override public func viewDidLoad() {
-        tableView.registerClass(LicensingItemCell.self, forCellReuseIdentifier: reuseIdentifier)
+    override open func viewDidLoad() {
+        tableView.register(LicensingItemCell.self, forCellReuseIdentifier: reuseIdentifier)
         tableView.estimatedRowHeight = 400
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.tableFooterView = UIView()
@@ -57,14 +57,14 @@ public class LicensingViewController: UITableViewController {
 
 extension LicensingViewController {
 
-    override public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
 
-    override public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let item = items[indexPath.row] as LicensingItem
+    override open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let item = items[(indexPath as NSIndexPath).row] as LicensingItem
 
-        let cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier) as? LicensingItemCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier) as? LicensingItemCell
 
         cell?.titleLabel.text = item.title
         cell?.titleLabel.font = titleFont
@@ -76,7 +76,7 @@ extension LicensingViewController {
         
         cell?.backgroundColor = cellBackgroundColor
         
-        cell?.userInteractionEnabled = false
+        cell?.isUserInteractionEnabled = false
         
         cell?.layoutIfNeeded()
 

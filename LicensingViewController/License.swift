@@ -8,14 +8,14 @@
 import Foundation
 
 public enum License {
-    case Apache2(owner: String, years: String)
-    case MIT(owner: String, years: String)
+    case apache2(owner: String, years: String)
+    case mit(owner: String, years: String)
 
     func notice() -> String {
         switch self {
-        case .Apache2(let owner, let years):
+        case .apache2(let owner, let years):
             return String(format: apache2Format, owner, years)
-        case .MIT(let owner, let years):
+        case .mit(let owner, let years):
             return String(format: mitFormat, owner, years)
         }
     }

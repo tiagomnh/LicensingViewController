@@ -66,19 +66,19 @@ class LicensingItemCell: UITableViewCell {
             "spacing": spacing
         ]
 
-        contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("|-spacing-[titleLabel]-spacing-|",
+        contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "|-spacing-[titleLabel]-spacing-|",
             options: [],
             metrics: metrics,
             views: views
             ))
 
-        contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-spacing-[titleLabel]-[noticeLabel]-spacing-|",
+        contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-spacing-[titleLabel]-[noticeLabel]-spacing-|",
             options: [],
             metrics: metrics,
             views: views
             ))
 
-        contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("|-spacing-[noticeLabel]-spacing-|",
+        contentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "|-spacing-[noticeLabel]-spacing-|",
             options: [],
             metrics: metrics,
             views: views
