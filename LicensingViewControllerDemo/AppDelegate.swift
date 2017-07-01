@@ -30,10 +30,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             title: "Kingfisher",
             license: License.mit(owner: "Wei Wang", years: "2015")
         )
+        
+        let nanumfontItem = LicensingItem(
+            title: "Nanum",
+            license: License.ofl(owner: "NAVER Corporation (http://www.nhncorp.com)", years: "2010")
+        )
 
         let licensingViewController = LicensingViewController()
         licensingViewController.title = "Acknowledgments"
-        licensingViewController.items = [alamofireItem, caniveteItem, kingfisherItem]
+        licensingViewController.items = [alamofireItem, caniveteItem, kingfisherItem, nanumfontItem]
         licensingViewController.titleColor = UIButton().tintColor!
 
         self.window = UIWindow(frame: UIScreen.main.bounds)
