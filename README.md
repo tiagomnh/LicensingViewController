@@ -41,7 +41,7 @@ licensingViewController.items = [alamofireItem, caniveteItem, kingfisherItem]
 ## Requirements
 
 - iOS 8.0+
-- Xcode 8 (Swift 3.0)
+- Xcode 9 (Swift 3.2)
 
 ## Installation
 
